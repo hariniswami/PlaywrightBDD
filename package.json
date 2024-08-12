@@ -1,0 +1,20 @@
+{
+  "name": "devacadamywebsitewithplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bddgen": "npx bddgen",
+    "test": "npm run bddgen && npm run playwright-test",
+    "playwright-test": "npx playwright test --headed --reporter=html,list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.1.0",
+    "playwright-bdd": "^7.2.1"
+  }
+}
